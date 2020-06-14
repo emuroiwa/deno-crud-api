@@ -1,6 +1,6 @@
 import client from '../db/MySqlClient.ts';
 import * as doesIssueExist from '../specification/doesIssueExist.ts';
-import { remove } from '../repository/issue.ts';
+import { remove } from '../models/issue.ts';
 
 export async function deleteIssue ({ params, response }: { params: any; response: any }) {
     const hasRecord = await doesIssueExist.isSatisfiedBy(params.id);

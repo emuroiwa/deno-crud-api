@@ -1,7 +1,7 @@
 import client from '../db/MySqlClient.ts';
 import * as doesIssueExist from '../specification/doesIssueExist.ts';
 import { issueInterface } from '../contract/issueInterface.ts';
-import { update } from '../repository/issue.ts';
+import { update } from '../models/issue.ts';
 
 export async function updateIssue ({ request, response, params }: { request: any; response: any; params: any }) {
     const body = await request.body()

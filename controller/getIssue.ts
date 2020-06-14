@@ -1,6 +1,6 @@
 import client from '../db/MySqlClient.ts';
 import * as doesIssueExist from '../specification/doesIssueExist.ts';
-import { search } from '../repository/issue.ts';
+import { search } from '../models/issue.ts';
 
 export async function getIssue({ params, response }: { params: any; response: any }) {
     const hasRecord = await doesIssueExist.isSatisfiedBy(params.id);

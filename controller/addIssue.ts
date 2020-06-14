@@ -1,5 +1,5 @@
 import client from '../db/MySqlClient.ts';
-import { insert } from '../repository/issue.ts';
+import { insert } from '../models/issue.ts';
 import { issueInterface } from '../contract/issueInterface.ts';
   
 export async function addIssue ({ request, response }: { request: any; response: any }) {
